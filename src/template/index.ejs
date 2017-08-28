@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="http://www.kaiyanapp.com/favicon.ico" type="image/vnd.microsoft.icon">
 	<title>
 		<%= htmlWebpackPlugin.options.title %>
 	</title>
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-	<div id="app"></div>
+	<div id="app" class="app"></div>
 	<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
 		<script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
 	<% } %>
