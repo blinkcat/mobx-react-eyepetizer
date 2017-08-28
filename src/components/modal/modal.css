@@ -1,0 +1,50 @@
+.center {
+	text-align: center;
+}
+.modal {
+	composes: center;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #000;
+	background: rgba(0, 0, 0, .3);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+.content {
+	padding-bottom: 20px;
+	width: 300px;
+	background: #fff;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	z-index: 1000;
+}
+
+.content :global a {
+	color: #000;
+	text-decoration: none;
+}
+
+.content :global a:hover {
+	text-decoration: underline;
+}
+
+.img {
+	max-width: 100%;
+}
+
+.transition {
+	transition: opacity .3s;
+	opacity: 1;
+}
+.transition_content {
+	opacity: 1;
+	transition: all .6s;
+	transform: translate3d(-50%, -50%, 0);
+}

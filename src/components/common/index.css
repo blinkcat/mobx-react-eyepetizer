@@ -1,0 +1,7 @@
+.flex-cont {
+	display: flex;
+}
+
+.flex-item {
+	flex: 1;
+}

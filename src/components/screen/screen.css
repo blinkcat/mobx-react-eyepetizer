@@ -1,0 +1,33 @@
+.screen {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.screen__menu {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.cover {
+	background: rgba(0, 0, 0, .4);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: -10;
+}
+.videow {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: -100;
+}
+
+.video {
+	left: 50%;
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}

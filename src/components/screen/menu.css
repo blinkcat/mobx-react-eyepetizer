@@ -1,0 +1,36 @@
+.menu {
+	composes: screen__menu from './screen.css';
+	composes: flex-cont from '../common/index.css';
+}
+
+.menu_item {
+	composes: flex-item from 'Components/common/index.css';
+	width: 36px;
+	height: 36px;
+	display: block;
+	margin: 0 8px;
+	opacity: .7;
+	transition: opacity .6s;
+	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/sprite_share.bc0f4494.png);
+	background-repeat: no-repeat;
+}
+.menu_item:hover {
+	opacity: 1;
+}
+.wechat {
+	composes: menu_item;
+	background-size: 36px;
+	background-position: 0 -26px;
+}
+
+.weibo {
+	composes: menu_item;
+	background-size: 36px;
+	background-position: 0 -63px;
+}
+
+.email {
+	composes: menu_item;
+	background-size: 54px;
+	background-position: 0 0;
+}
