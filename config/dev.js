@@ -5,15 +5,18 @@ const webpack = require('webpack');
 module.exports = merge(base, {
 	//for hot reload
 	entry: {
-		main: ['react-hot-loader/patch', './src/app.dev.js']
+		main: [
+			'react-hot-loader/patch',
+			'./src/index.js'
+		]
 	},
 	devServer: {
-		hot: true,
 		compress: false,
 		host: '0.0.0.0',
 		port: 8080,
 		historyApiFallback: true
 	},
-	plugins: [new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin()],
-	devtool: 'eval-source-map'
+	plugins: [new webpack.NamedModulesPlugin()],
+	// devtool: 'eval-source-map'
+	devtool: 'inline-source-map'
 });

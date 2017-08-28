@@ -2,17 +2,19 @@ const path = require('path');
 const webpack = require('webpack');
 const NyanProgressPlugin = require('nyan-progress-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const rootPath = path.join(__dirname, '..');
 const prod = process.env.NODE_ENV === 'production';
 const dev = !prod;
+const extractLESS = new ExtractTextPlugin(`global${dev ? '' : '.[contenthash:10]'}.css`);
+const extractCSS = new ExtractTextPlugin(`[name]${dev ? '' : '.[contenthash:10]'}.css`);
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const rootPath = path.join(__dirname, '..');
 
 module.exports = {
 	entry: {
-		main: './src/app.js',
+		main: './src/index.js',
 		react: ['react', 'react-dom'],
 		state: ['mobx', 'mobx-react'],
-		tp: ['lodash', 'axios', 'react-router']
+		tp: ['lodash', 'axios', 'react-router-dom', 'classnames']
 	},
 
 	output: {
@@ -34,7 +36,7 @@ module.exports = {
 								{
 									targets: {
 										// browsers: ['Chrome>=50']
-										browsers: ['ie>9']
+										browsers: ['ie>=10']
 									},
 									modules: false
 									// uglify: true
@@ -48,16 +50,59 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
+				test: /\.less$/,
+				use: extractLESS.extract({
 					fallback: 'style-loader',
-					use: {
-						loader: 'css-loader',
-						options: {
-							modules: true,
-							localIdentName: '[name]__[local]--[hash:base64:5]'
+					use: [
+						{
+							loader: 'css-loader',
+							options: {
+								sourceMap: dev
+							}
+						},
+						{
+							loader: 'postcss-loader',
+							options: {
+								sourceMap: dev,
+								config: {
+									path: `${__dirname}/postcss.config.js`
+								}
+							}
+						},
+						{
+							loader: 'less-loader',
+							options: {
+								sourceMap: dev
+							}
 						}
-					}
+					]
+				})
+			},
+			{
+				test: /\.css$/,
+				include: path.resolve(rootPath, 'src'),
+				use: extractCSS.extract({
+					fallback: 'style-loader',
+					use: [
+						{
+							loader: 'css-loader',
+							options: {
+								modules: true,
+								localIdentName: '[hash:base64:9]',
+								sourceMap: dev,
+								importLoaders: 1
+							}
+						},
+						{
+							loader: 'postcss-loader',
+							options: {
+								sourceMap: dev,
+								config: {
+									path: `${__dirname}/postcss.config.js`
+								}
+							}
+						}
+					]
 				})
 			},
 			{
@@ -70,7 +115,7 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif|woff|woff2|eot|ttf|otf)$/,
+				test: /\.(png|svg|jpg|jpeg|gif)$/,
 				use: {
 					loader: 'url-loader',
 					options: {
@@ -79,13 +124,24 @@ module.exports = {
 						outputPath: 'images/'
 					}
 				}
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				use: {
+					loader: 'url-loader',
+					options: {
+						limit: 8192, //8k
+						name: '[name].[ext]',
+						outputPath: 'fonts/'
+					}
+				}
 			}
 		]
 	},
 	plugins: [
 		new NyanProgressPlugin(),
 		new webpack.DefinePlugin({
-			'process.env.NODE_ENV': JSON.stringify(dev ? 'developmentÏ' : 'production')
+			'process.env.NODE_ENV': JSON.stringify(dev ? 'development' : 'production')
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: ['tp', 'state', 'react']
@@ -93,7 +149,9 @@ module.exports = {
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'runtime'
 		}),
-		new ExtractTextPlugin(`[name]${dev ? '' : '.[contenthash:10]'}.css`),
+		// new ExtractTextPlugin(`[name]${dev ? '' : '.[contenthash:10]'}.css`),
+		extractLESS,
+		extractCSS,
 		new HtmlWebpackPlugin({
 			title: 'mobx-react-eyepetizer',
 			template: 'src/template/index.ejs',
@@ -103,11 +161,12 @@ module.exports = {
 	],
 	resolve: {
 		alias: {
-			containers: rootPath + '/src/containers',
-			components: rootPath + '/src/components',
-			stores: rootPath + '/src/stores',
-			services: rootPath + '/src/services',
-			utils: rootPath + '/src/utils'
+			Containers: path.resolve(rootPath, 'src/containers'),
+			Components: path.resolve(rootPath, 'src/components'),
+			Stores: path.resolve(rootPath, 'src/stores'),
+			Services: path.resolve(rootPath, 'src/services'),
+			Utils: path.resolve(rootPath, 'src/utils'),
+			Less: path.resolve(rootPath, 'src/less')
 		}
 	}
 };
