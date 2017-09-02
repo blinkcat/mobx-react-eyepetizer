@@ -1,9 +1,9 @@
-.menu {
-	composes: screen__menu from './screen.css';
+.root {
+	/* composes: screen__menu from './screen.css'; */
 	composes: flex-cont from '../common/index.css';
 }
 
-.menu_item {
+.item {
 	composes: flex-item from 'Components/common/index.css';
 	width: 36px;
 	height: 36px;
@@ -14,23 +14,23 @@
 	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/sprite_share.bc0f4494.png);
 	background-repeat: no-repeat;
 }
-.menu_item:hover {
+.item:hover {
 	opacity: 1;
 }
-.wechat {
-	composes: menu_item;
+.item_wechat {
+	composes: item;
 	background-size: 36px;
 	background-position: 0 -26px;
 }
 
-.weibo {
-	composes: menu_item;
+.item_weibo {
+	composes: item;
 	background-size: 36px;
 	background-position: 0 -63px;
 }
 
-.email {
-	composes: menu_item;
+.item_email {
+	composes: item;
 	background-size: 54px;
 	background-position: 0 0;
 }

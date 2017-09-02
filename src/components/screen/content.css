@@ -63,3 +63,26 @@
 	line-height: 52px;
 	letter-spacing: 4px;
 }
+
+@media screen and (max-width: 1024px) {
+	.logo {
+		background-position: 0 81.02435%;
+		background-size: 428px;
+		height: 150px;
+		top: 28%;
+		width: 120px;
+	}
+	.intro {
+		background-position: 0 55.5773%;
+		background-size: 528.59829px;
+		height: 44px;
+		top: 54%;
+		width: 289px;
+	}
+	.content_dbl {
+		top: 77%;
+	}
+	.entry {
+		display: none;
+	}
+}

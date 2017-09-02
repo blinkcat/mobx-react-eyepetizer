@@ -1,5 +1,5 @@
-.dlb {
-	composes: content_dbl from './content.css';
+.root {
+	/* composes: content_dbl from './content.css'; */
 	composes: flex-cont from '../common/index.css';
 	height: 52px;
 }
@@ -15,9 +15,9 @@
 	composes: flex-item from 'Components/common/index.css';
 	height: 52px;
 	margin: 0 14px;
-	opacity: .7;
-	-webkit-transition: opacity .3s;
-	transition: opacity .3s;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
 	width: 162px;
 }
 .button:hover {
@@ -30,4 +30,29 @@
 .android {
 	composes: button;
 	background-position: 0 7.22186%;
+}
+
+.root_black {
+	flex-direction: column;
+}
+
+.root_black .ios {
+	background-position: 0 28.49707%;
+}
+
+.root_black .android {
+	background-position: 0 14.3136%;
+}
+
+@media screen and (max-width: 1024px) {
+	.root {
+		flex-direction: column;
+		justify-content: space-between;
+		height: 124px;
+		width: 162px;
+	}
+	.button {
+		margin: 0;
+		flex: 0 1 auto;
+	}
 }
