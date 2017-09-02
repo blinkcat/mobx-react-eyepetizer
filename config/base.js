@@ -88,7 +88,7 @@ module.exports = {
 							loader: 'css-loader',
 							options: {
 								modules: true,
-								localIdentName: '[hash:base64:9]',
+								localIdentName: '[name]-[hash:base64:5]',
 								sourceMap: dev,
 								importLoaders: 1
 							}
@@ -160,6 +160,7 @@ module.exports = {
 		})
 	],
 	resolve: {
+		extensions: ['.js', '.json', '.jsx'],
 		alias: {
 			Containers: path.resolve(rootPath, 'src/containers'),
 			Components: path.resolve(rootPath, 'src/components'),
