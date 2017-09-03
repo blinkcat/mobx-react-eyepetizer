@@ -28,14 +28,15 @@ class VideoListStore {
 							this.videoList,
 							this._pickNeededData(raw_data.videoList)
 						);
+						this.fetching_status = 'done';
 					});
 				}
-				this.fetching_status = 'done';
 			})
 			.catch(e => {
-				console.log('here');
-				console.log('error', e);
-				this.fetching_status = 'error';
+				console.log(e);
+				runInAction(() => {
+					this.fetching_status = 'error';
+				});
 			});
 	};
 }
