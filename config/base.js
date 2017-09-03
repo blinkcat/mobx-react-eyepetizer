@@ -20,7 +20,7 @@ module.exports = {
 	output: {
 		filename: `[name]${dev ? '' : '.[chunkhash:10]'}.js`,
 		path: path.resolve(rootPath, 'dist'),
-		publicPath: ''
+		publicPath: '/'
 	},
 	module: {
 		rules: [
