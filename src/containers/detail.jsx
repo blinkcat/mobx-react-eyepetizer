@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Loading from 'Components/loading';
 
 export default class Detail extends Component {
 	constructor(props) {
@@ -6,6 +7,6 @@ export default class Detail extends Component {
 	}
 
 	render() {
-		return <p>this is detail</p>;
+		return <Loading />;
 	}
 }
