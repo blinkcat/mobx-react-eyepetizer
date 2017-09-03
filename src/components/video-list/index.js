@@ -1,3 +1,1 @@
-import VideoList from './VideoList';
-
-export default VideoList;
+export { default } from './VideoList';
