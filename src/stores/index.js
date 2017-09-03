@@ -1,3 +1,3 @@
-import videoListStore from './vide_list_store';
+import videoListStore from './videoListStore';
 
 export { videoListStore };

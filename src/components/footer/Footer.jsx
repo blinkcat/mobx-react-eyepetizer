@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import DownLoadButton from 'Components/screen/down_load_button';
-import Modals from 'Components/modal/modal_factory';
+import DownloadButton from 'Components/screen/DownloadButton';
+import Modals from 'Components/modal/ModalFactory';
 import styles from './footer.css';
-import dlb_styles from 'Components/screen/down_load_button.css';
+import dlbStyles from 'Components/screen/downloadButton.css';
 
 export default class Footer extends Component {
 	constructor(props) {
@@ -13,13 +13,13 @@ export default class Footer extends Component {
 		};
 	}
 
-	toggle_ios_download_modal = () => {
+	toggleIosDownloadModal = () => {
 		this.setState({
 			open_ios_download_modal: !this.state.open_ios_download_modal
 		});
 	};
 
-	toggle_android_download_modal = () => {
+	toggleAndroidDownloadModal = () => {
 		this.setState({
 			open_android_download_modal: !this.state.open_android_download_modal
 		});
@@ -32,19 +32,19 @@ export default class Footer extends Component {
 				<div className={styles.images}>
 					<div className={styles.icon} />
 					<div className={styles.logo} />
-					<DownLoadButton
-						className={`${styles.buttons} ${dlb_styles.root_black}`}
-						click_ios={this.toggle_ios_download_modal}
-						click_android={this.toggle_android_download_modal}
+					<DownloadButton
+						className={`${styles.buttons} ${dlbStyles.root_black}`}
+						onClickIos={this.toggleIosDownloadModal}
+						onClickAndroid={this.toggleAndroidDownloadModal}
 					/>
 				</div>
 				<Modals.Ios_download
 					open={this.state.open_ios_download_modal}
-					onBackdropClick={this.toggle_ios_download_modal}
+					onBackdropClick={this.toggleIosDownloadModal}
 				/>
 				<Modals.Android_download
 					open={this.state.open_android_download_modal}
-					onBackdropClick={this.toggle_android_download_modal}
+					onBackdropClick={this.toggleAndroidDownloadModal}
 				/>
 			</div>
 		);

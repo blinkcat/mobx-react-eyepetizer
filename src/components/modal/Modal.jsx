@@ -3,26 +3,22 @@ import TransitionGroup from 'react-transition-group/TransitionGroup';
 import PropTypes from 'prop-types';
 import styles from './modal.css';
 
-export default class TranstionModal extends Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
-		const { open, onBackdropClick, ...other } = this.props;
-
-		return (
-			<TransitionGroup component="div">
-				{open ? <Modal {...other} onBackdropClick={onBackdropClick} /> : null}
-			</TransitionGroup>
-		);
-	}
+export default function TranstionModal({ open, onBackdropClick, ...other }) {
+	return (
+		<TransitionGroup component="div">
+			{open ? <Modal {...other} onBackdropClick={onBackdropClick} /> : null}
+		</TransitionGroup>
+	);
 }
 
 TranstionModal.propTypes = {
 	open: PropTypes.bool,
-	img_src: PropTypes.string,
+	img_src: PropTypes.string.isRequired,
 	text: PropTypes.element
+};
+
+TranstionModal.defaultProps = {
+	open: false
 };
 
 class Modal extends Component {
@@ -47,7 +43,7 @@ class Modal extends Component {
 
 	// componentDidLeave() {}
 
-	handle_click = e => {
+	handleClick = e => {
 		const { onBackdropClick } = this.props;
 		if (e.target === e.currentTarget && onBackdropClick) {
 			onBackdropClick(e);
@@ -60,7 +56,7 @@ class Modal extends Component {
 		return (
 			<div
 				className={styles.root}
-				onClick={this.handle_click}
+				onClick={this.handleClick}
 				ref={modal => {
 					this.modal = modal;
 				}}
@@ -80,5 +76,7 @@ class Modal extends Component {
 }
 
 Modal.propTypes = {
+	img_src: PropTypes.string.isRequired,
+	text: PropTypes.element,
 	close: PropTypes.func
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from './index';
 
-const modals = {
+const ModalFacotry = {
 	Ios_download: props => (
 		<Modal
 			img_src="http://static.kaiyanapp.com/eyepetizer-web/assets/images/index/landing_scan_qr_ios.e13aaceb.png"
@@ -45,4 +45,4 @@ const modals = {
 	)
 };
 
-export default modals;
+export default ModalFacotry;

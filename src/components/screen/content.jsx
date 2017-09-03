@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import DownLoadButton from 'Components/screen/down_load_button';
-import Modals from 'Components/modal/modal_factory';
+import DownLoadButton from 'Components/screen/DownloadButton';
+import Modals from 'Components/modal/ModalFactory';
 import styles from './content.css';
 
 export default class Content extends Component {
@@ -12,13 +12,13 @@ export default class Content extends Component {
 		};
 	}
 
-	toggle_ios_download_modal = () => {
+	toggleIosDownloadModal = () => {
 		this.setState({
 			open_ios_download_modal: !this.state.open_ios_download_modal
 		});
 	};
 
-	toggle_android_download_modal = () => {
+	toggleAndroidDownloadModal = () => {
 		this.setState({
 			open_android_download_modal: !this.state.open_android_download_modal
 		});
@@ -31,8 +31,8 @@ export default class Content extends Component {
 				<div className={styles.intro} />
 				<DownLoadButton
 					className={styles.content_dbl}
-					click_ios={this.toggle_ios_download_modal}
-					click_android={this.toggle_android_download_modal}
+					onClickIos={this.toggleIosDownloadModal}
+					onClickAndroid={this.toggleAndroidDownloadModal}
 				/>
 				<a href="http://open.eyepetizer.net/#!/landing" className={styles.entry}>
 					<div className={styles.audit} />
@@ -40,11 +40,11 @@ export default class Content extends Component {
 				</a>
 				<Modals.Ios_download
 					open={this.state.open_ios_download_modal}
-					onBackdropClick={this.toggle_ios_download_modal}
+					onBackdropClick={this.toggleIosDownloadModal}
 				/>
 				<Modals.Android_download
 					open={this.state.open_android_download_modal}
-					onBackdropClick={this.toggle_android_download_modal}
+					onBackdropClick={this.toggleAndroidDownloadModal}
 				/>
 			</div>
 		);

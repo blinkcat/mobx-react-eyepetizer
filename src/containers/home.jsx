@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Screen from 'Components/screen';
-import VideoList from 'Components/video_list';
+import VideoList from 'Components/video-list';
 import Footer from 'Components/footer';
 
 export default class Home extends Component {

@@ -1,27 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import styles from './menu.css';
 
-export default class Menu extends Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
-		const { className = '', click_wechat } = this.props;
-
-		return (
-			<div className={classNames(styles.root, { [className]: className })}>
-				<a href="#" onClick={click_wechat} className={styles.item_wechat} />
-				<a href="http://weibo.com/eyepetizer" className={styles.item_weibo} />
-				<a href="mailto:bd@eyepetizer.net" className={styles.item_email} />
-			</div>
-		);
-	}
+export default function Menu({ className, clickWechat }) {
+	return (
+		<div className={classNames(styles.root, { [className]: className })}>
+			<a href="#" onClick={clickWechat} className={styles.item_wechat} />
+			<a href="http://weibo.com/eyepetizer" className={styles.item_weibo} />
+			<a href="mailto:bd@eyepetizer.net" className={styles.item_email} />
+		</div>
+	);
 }
 
 Menu.propTypes = {
-	click_wechat: PropTypes.func,
+	clickWechat: PropTypes.func,
 	className: PropTypes.string
+};
+
+Menu.defaultProps = {
+	clickWechat: null,
+	className: ''
 };

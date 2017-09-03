@@ -13,7 +13,7 @@
 }
 
 .images {
-	composes: flex-cont from '../common/index.css';
+	composes: flex-cont from 'Components/common/flex.css';
 	align-items: center;
 	margin: 0 auto;
 	width: 482px;

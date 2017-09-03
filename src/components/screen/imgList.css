@@ -1,0 +1,46 @@
+.root {
+	display: none;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: -200;
+}
+.img {
+	animation: f 20s linear infinite alternate;
+	opacity: 1;
+	position: absolute;
+	transition: opacity 1.25s;
+	width: 120%;
+}
+.img:nth-child(odd) {
+	animation: g 8s ease infinite alternate;
+}
+.hide {
+	composes: img;
+	opacity: 0;
+}
+@keyframes f {
+	0% {
+		transform: scaleX(1);
+	}
+
+	to {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+}
+
+@keyframes g {
+	0% {
+		transform: translateZ(0);
+	}
+
+	to {
+		transform: translate3d(-5%, -2%, 0);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.root {
+		display: block;
+	}
+}

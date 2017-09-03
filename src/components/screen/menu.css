@@ -1,10 +1,10 @@
 .root {
 	/* composes: screen__menu from './screen.css'; */
-	composes: flex-cont from '../common/index.css';
+	composes: flex-cont from 'Components/common/flex.css';
 }
 
 .item {
-	composes: flex-item from 'Components/common/index.css';
+	composes: flex-item from 'Components/common/flex.css';
 	width: 36px;
 	height: 36px;
 	display: block;

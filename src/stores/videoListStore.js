@@ -7,7 +7,7 @@ class VideoListStore {
 	@observable date = 0;
 	@observable fetching_status = 'done'; // "pending" / "done" / "error"
 
-	pick_needed_data = list => {
+	_pickNeededData = list => {
 		return list.map(v => {
 			return _.pick(v, ['id', 'title', 'category', 'duration', 'coverForFeed']);
 		});
@@ -16,7 +16,7 @@ class VideoListStore {
 	@action
 	getData = () => {
 		this.fetching_status = 'pending';
-		http
+		return http
 			.get('/feed')
 			.then(res => {
 				let raw_data;
@@ -26,18 +26,19 @@ class VideoListStore {
 						this.date = raw_data.date;
 						Array.prototype.push.apply(
 							this.videoList,
-							this.pick_needed_data(raw_data.videoList)
+							this._pickNeededData(raw_data.videoList)
 						);
 					});
 				}
 				this.fetching_status = 'done';
 			})
 			.catch(e => {
-				console.log(e);
+				console.log('here');
+				console.log('error', e);
 				this.fetching_status = 'error';
 			});
 	};
 }
 
 let instance = new VideoListStore();
-export default instance;
+export { instance as default, VideoListStore };
