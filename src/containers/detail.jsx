@@ -155,7 +155,7 @@ function Footer() {
 			</a>
 			<img
 				className={styles.footer_img}
-				src="//static.kaiyanapp.com/eyepetizer-web/assets/images/eyepetizer-wx-qr.243f15a2.png"
+				src="http://static.kaiyanapp.com/eyepetizer-web/assets/images/eyepetizer-wx-qr.243f15a2.png"
 				alt="eyepetizer wechat qrcode"
 			/>
 			<div className={styles.qr_tips}>长按二维码关注「开眼 Eyepetizer」微信公众号</div>

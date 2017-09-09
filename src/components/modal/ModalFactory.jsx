@@ -20,7 +20,7 @@ const ModalFacotry = {
 	),
 	Android_download: props => (
 		<Modal
-			img_src="http:////static.kaiyanapp.com/eyepetizer-web/assets/images/index/landing_scan_qr_android.8915ce9c.png"
+			img_src="http://static.kaiyanapp.com/eyepetizer-web/assets/images/index/landing_scan_qr_android.8915ce9c.png"
 			text={
 				<div>
 					扫描二维码<br />下载 Android 版开眼<br />

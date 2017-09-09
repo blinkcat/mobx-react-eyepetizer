@@ -42,7 +42,7 @@
 	z-index: 10;
 }
 .logo {
-	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/logo_launch@3x.ff359b72.png);
+	background-image: url(http://static.kaiyanapp.com/eyepetizer-web/assets/images/detail/logo_launch@3x.ff359b72.png);
 	height: 44px;
 	left: 8px;
 	top: 12px;
@@ -60,7 +60,7 @@
 	padding: 0;
 	position: absolute;
 	background: none;
-	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/btn_launch@3x.950ac618.png);
+	background-image: url(http://static.kaiyanapp.com/eyepetizer-web/assets/images/detail/btn_launch@3x.950ac618.png);
 	background-size: cover;
 	cursor: pointer;
 	border: none;

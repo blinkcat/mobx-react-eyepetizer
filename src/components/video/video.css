@@ -29,7 +29,7 @@
 .play_button {
 	composes: div;
 	background-color: rgba(0, 0, 0, 0.15);
-	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_play@2x.3b9f9ba5.png);
+	background-image: url(http://static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_play@2x.3b9f9ba5.png);
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: 60px 60px;

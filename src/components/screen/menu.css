@@ -11,7 +11,7 @@
 	margin: 0 8px;
 	opacity: .7;
 	transition: opacity .6s;
-	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/sprite_share.bc0f4494.png);
+	background-image: url(http://static.kaiyanapp.com/eyepetizer-web/assets/images/sprite_share.bc0f4494.png);
 	background-repeat: no-repeat;
 }
 .item:hover {

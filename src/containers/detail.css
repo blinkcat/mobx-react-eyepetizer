@@ -103,7 +103,7 @@
 	right: 16px;
 }
 .like_icon {
-	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+	background-image: url(http://static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
 	background-position: 50%;
 	background-size: cover;
 	height: 15px;
@@ -185,7 +185,7 @@
 }
 .bottom_logo {
 	composes: footer_div;
-	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/bottom_logo@3x.556cae6b.png);
+	background-image: url(http://static.kaiyanapp.com/eyepetizer-web/assets/images/detail/bottom_logo@3x.556cae6b.png);
 	height: 94px;
 	width: 90px;
 }

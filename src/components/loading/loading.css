@@ -25,13 +25,13 @@
 
 .out {
 	composes: div;
-	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/loading_out@3x.444b89a3.png);
+	background-image: url(http://static.kaiyanapp.com/eyepetizer-web/assets/images/detail/loading_out@3x.444b89a3.png);
 }
 
 .in {
 	composes: div;
 	animation: e 0.5s linear infinite;
-	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/loading_in@3x.94a9c4b4.png);
+	background-image: url(http://static.kaiyanapp.com/eyepetizer-web/assets/images/detail/loading_in@3x.94a9c4b4.png);
 }
 
 @keyframes e {

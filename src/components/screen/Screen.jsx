@@ -27,8 +27,8 @@ class Screen extends Component {
 				<Content />
 				<div className={styles.cover} />
 				<VideoPlayer
-					poster="//static.kaiyanapp.com/eyepetizer-web/assets/images/index/home_poster.43ddf261.jpg"
-					src="//static.kaiyanapp.com/eyepetizer-web/homepage.mp4"
+					poster="http://static.kaiyanapp.com/eyepetizer-web/assets/images/index/home_poster.43ddf261.jpg"
+					src="http://static.kaiyanapp.com/eyepetizer-web/homepage.mp4"
 				/>
 				<ImageList />
 				<Modals.Wechat
