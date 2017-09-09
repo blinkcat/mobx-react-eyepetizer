@@ -14,19 +14,19 @@ mobx.useStrict(true);
 
 const render = () => {
 	ReactDOM.render(
-		<AppContainer>
-			<Provider {...stores}>
-				{/* <div> */}
-				<BrowserRouter>
-					<Switch>
-						<Route exact path="/" component={Home} />
-						<Route path="/detail/:id" component={Detail} />
-					</Switch>
-				</BrowserRouter>
-				{/* <DevTools /> */}
-				{/* </div> */}
-			</Provider>
-		</AppContainer>,
+		<div style={{ height: '100%' }}>
+			<AppContainer>
+				<Provider {...stores}>
+					<BrowserRouter>
+						<Switch>
+							<Route exact path="/" component={Home} />
+							<Route path="/detail/:id" component={Detail} />
+						</Switch>
+					</BrowserRouter>
+				</Provider>
+			</AppContainer>
+			<DevTools position={{ top: 20, left: 20 }} />
+		</div>,
 		document.getElementById('app')
 	);
 };

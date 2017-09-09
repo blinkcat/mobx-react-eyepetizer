@@ -1,6 +1,6 @@
 import { observable, action, runInAction } from 'mobx';
 import http from 'Utils/http';
-import _ from 'lodash';
+import { pick } from 'lodash';
 
 class VideoListStore {
 	@observable videoList = [];
@@ -9,7 +9,7 @@ class VideoListStore {
 
 	_pickNeededData = list => {
 		return list.map(v => {
-			return _.pick(v, ['id', 'title', 'category', 'duration', 'coverForFeed']);
+			return pick(v, ['id', 'title', 'category', 'duration', 'coverForFeed']);
 		});
 	};
 

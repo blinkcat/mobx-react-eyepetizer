@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
+import second2minute from 'Utils/second2minute';
 import PropTypes from 'prop-types';
 import styles from './videoList.css';
+import { Link } from 'react-router-dom';
 
 @inject('videoListStore')
 @observer
@@ -22,9 +24,7 @@ class VideoList extends Component {
 		return (
 			<div className={styles.video_list}>
 				<VideoDate timeStamp={videoListStore.date} />
-				{videoListStore.videoList.map(v => {
-					return <Video {...v} key={v.id} />;
-				})}
+				<VideoItems list={videoListStore.videoList} />
 			</div>
 		);
 	}
@@ -43,22 +43,26 @@ VideoDate.defaultProps = {
 	timeStamp: Date.now()
 };
 
-function Video(props) {
+function VideoItems({ list }) {
+	return <div>{list.map(v => <VideoItem {...v} key={v.id} />)}</div>;
+}
+
+function VideoItem(props) {
 	const { id, bg, title, meta } = convert(props);
 	return (
-		<a
-			href={`/detail/${id}`}
+		<Link
+			to={`/detail/${id}`}
 			className={styles.video}
 			style={{ backgroundImage: `url(${bg})` }}
 		>
 			<div className={styles.cover} />
 			<div className={styles.title}>{title}</div>
 			<div className={styles.meta}>{meta}</div>
-		</a>
+		</Link>
 	);
 }
 
-Video.propTypes = {
+VideoItem.propTypes = {
 	id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 	title: PropTypes.string.isRequired,
 	category: PropTypes.string.isRequired,
@@ -74,9 +78,4 @@ function convert(data) {
 	};
 }
 
-function second2minute(second) {
-	second = ~~second;
-	return `${Math.floor(second / 60)}' ${second % 60}"`;
-}
-
-export { VideoList as default, VideoDate, Video, convert, second2minute };
+export { VideoList as default, VideoDate, Video, convert };

@@ -1,0 +1,206 @@
+.root {
+	background: #333;
+}
+
+.inner {
+	margin: 0 auto;
+	max-width: 700px;
+	overflow: hidden;
+	color: #fff;
+}
+
+.relative {
+	position: relative;
+}
+
+.relative_inner {
+	position: relative;
+	z-index: 1;
+}
+
+.related {
+	background: rgba(0, 0, 0, 0.4);
+	padding: 20px 15px 10px;
+}
+
+.related_item {
+	color: #fff;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.cover {
+	background-position: 50%;
+	background-size: cover;
+	border: 0.5px solid hsla(0, 0%, 100%, 0.3);
+	padding-top: 25%;
+	width: 40%;
+}
+
+.meta {
+	left: 40%;
+	margin-left: 15px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.title {
+	font-size: 13px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.category {
+	font-size: 12px;
+	opacity: 0.85;
+}
+
+@media (min-width: 400px) {
+	.title {
+		font-size: 14px;
+	}
+
+	.category {
+		font-size: 13px;
+	}
+}
+
+.long_divide {
+	composes: long_divide from 'Components/video-info/videoInfo.css';
+}
+
+.reply {
+	background: rgba(0, 0, 0, 0.4);
+}
+.header {
+	padding: 16px 0 10px;
+	text-align: center;
+}
+.dbutton_outer {
+	padding: 0 16px;
+}
+.dbutton {
+	background: hsla(0, 0%, 100%, 0.3);
+	border-radius: 2px;
+	border: none;
+	line-height: 32px;
+	margin: 0 0 16px;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+}
+.replyb {
+	font-size: 12px;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+.like {
+	position: absolute;
+	text-align: right;
+	top: 0;
+	right: 16px;
+}
+.like_icon {
+	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+	background-position: 50%;
+	background-size: cover;
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+}
+.like_num {
+	display: inline-block;
+	margin-right: 6px;
+}
+.like_hot {
+	font-family: Lobster, cursive;
+}
+.avatar {
+	background-position: 50%;
+	background-size: cover;
+	border-radius: 50%;
+	float: left;
+	height: 36px;
+	margin: 0 13px;
+	width: 36px;
+}
+
+.entity {
+	margin-left: 62px;
+}
+
+.username {
+	margin: 0;
+	margin-bottom: 4px;
+}
+
+.time {
+	margin: 0 0 4px 0;
+	opacity: 0.6;
+}
+.text {
+	margin: 0 0 15px 0;
+	padding-right: 35px;
+}
+
+.video_cover_blurred {
+	background-position: 50%;
+	background-size: 100% 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	transform: rotate(180deg) scaleX(-1);
+	width: 100%;
+}
+
+.tag {
+	background: rgba(0, 0, 0, 0.4);
+	color: #fff;
+}
+.tag_list {
+	padding: 0 37px 16px;
+	text-align: center;
+}
+.tag_item {
+	background: hsla(0, 0%, 100%, 0.3);
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: 3px;
+	line-height: 22px;
+	margin: 4px;
+	padding: 0 6px 0 9px;
+}
+
+.footer {
+	background: rgba(0, 0, 0, 0.4);
+	padding: 40px 0 60px;
+}
+.footer_div {
+	background-size: cover;
+	display: block;
+	margin: 0 auto 40px;
+}
+.bottom_logo {
+	composes: footer_div;
+	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/bottom_logo@3x.556cae6b.png);
+	height: 94px;
+	width: 90px;
+}
+
+.footer_img {
+	display: block;
+	margin: 0 auto 20px;
+	width: 80px;
+}
+
+.qr_tips {
+	composes: footer_div;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-align: center;
+}

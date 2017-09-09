@@ -24,5 +24,13 @@ describe('VideoStore', () => {
 				expect(vs.fetching_status).toBe('done');
 			});
 		});
+
+		it('VideoStore.relatedVideoList and VideoStore.replyList should not be null', () => {
+			const id = 48624;
+			return vs.getVideoData(id).then(() => {
+				expect(vs.relatedVideoList).not.toBe(null);
+				expect(vs.replyList).not.toBe(null);
+			});
+		});
 	});
 });

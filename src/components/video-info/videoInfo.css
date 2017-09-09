@@ -1,0 +1,67 @@
+.root {
+}
+
+.meta {
+	background: rgba(0, 0, 0, 0.2);
+	padding: 15px 15px 4px;
+}
+
+.h1 {
+	font-size: 20px;
+	margin: 0;
+	margin-bottom: 7px;
+	line-height: 1.5;
+}
+.divide {
+	margin-bottom: 7px;
+	transform: scaleY(0.5);
+	width: 40px;
+	background: #fff;
+	height: 1px;
+}
+
+.p {
+	margin: 0;
+	margin-bottom: 12px;
+	line-height: 1.5;
+}
+.description {
+	margin-bottom: 11px;
+	opacity: 0.85;
+	line-height: 1.5;
+}
+.long_divide {
+	background: #fff;
+	height: 1px;
+	transform: scaleY(0.5);
+}
+.launch {
+	background: rgba(0, 0, 0, 0.3);
+	height: 70px;
+	position: relative;
+	z-index: 10;
+}
+.logo {
+	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/logo_launch@3x.ff359b72.png);
+	height: 44px;
+	left: 8px;
+	top: 12px;
+	width: 174px;
+	background-size: cover;
+	padding: 0;
+	position: absolute;
+}
+
+.button {
+	height: 33px;
+	right: 12px;
+	top: 18px;
+	width: 86px;
+	padding: 0;
+	position: absolute;
+	background: none;
+	background-image: url(//static.kaiyanapp.com/eyepetizer-web/assets/images/detail/btn_launch@3x.950ac618.png);
+	background-size: cover;
+	cursor: pointer;
+	border: none;
+}
