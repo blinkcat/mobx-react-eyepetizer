@@ -3,3 +3,4 @@ dist
 .DS_Store
 .git
 tsconfig.json
+yarn-error.log

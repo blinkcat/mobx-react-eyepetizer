@@ -7,7 +7,7 @@ module.exports = merge(base, {
 	entry: {
 		main: [
 			'react-hot-loader/patch',
-			'./src/index.js'
+			'./src/index.ts'
 		]
 	},
 	devServer: {
