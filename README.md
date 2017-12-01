@@ -1,4 +1,9 @@
 # mobx-react-eyepetizer
 inspired by [React-Eyepetizer](https://github.com/w11p3333/React-Eyepetizer) and thanks to the [official](http://www.kaiyanapp.com/) offer of the api.
 ## tools
-webpack + mobx + react + react-router + axios + typescript + css modules
+next.js + axios + typescript + jest - mobx
+## develop
+```sh
+#开发模式
+yarn dev
+```

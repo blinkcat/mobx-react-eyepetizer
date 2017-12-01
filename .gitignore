@@ -1,6 +1,8 @@
 node_modules
 dist
+dest
+coverage
 .DS_Store
 .git
-tsconfig.json
+.next
 yarn-error.log

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withDataContainer Hoc run Hoc renders Error Component 1`] = `
+<h1>
+  have problems
+</h1>
+`;
+
+exports[`withDataContainer Hoc run Hoc renders correctly 1`] = `
+<p>
+  ok
+</p>
+`;

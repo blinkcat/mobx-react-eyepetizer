@@ -1,0 +1,1398 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component ReplyList renders correctly 1`] = `
+<div
+  className="reply-list"
+>
+  <div
+    className="divider"
+  >
+    <style
+      jsx={true}
+    >
+      
+        .divider {
+          background: #fff;
+          height: 1px;
+          @media (-webkit-min-device-pixel-ratio: 2) {
+            transform: scaleY(0.5);
+          }
+          &.short {
+            width: 40px;
+          }
+        }
+      
+    </style>
+  </div>
+  <div
+    className="header"
+  >
+    热门评论
+  </div>
+  <div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            23
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+        <div
+          className="like-count-hot"
+        >
+          - Hot -
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          eveho
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 09:22
+        </p>
+        <p
+          className="text"
+        >
+          一直理所当然存在的东西，想不到对于别人是一辈子不能拥有的。感动…
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epNayNzBbGEA7GYzTrZdDvZk8IhE8nPuOfUPpgqEHXiardxbxn2ULNJbNjEkrJQQYia9TcjlqQo0sHQ/0);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            10
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+        <div
+          className="like-count-hot"
+        >
+          - Hot -
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          请叫我口袋先森
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 13:29
+        </p>
+        <p
+          className="text"
+        >
+          这才是我认为的科学，而不是核武器，
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://tva2.sinaimg.cn/crop.0.0.720.720.180/d429ee8bjw8eu9m3dydxej20k00k0q3f.jpg);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            9
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+        <div
+          className="like-count-hot"
+        >
+          - Hot -
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          Smile_
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 11:59
+        </p>
+        <p
+          className="text"
+        >
+          谢谢为世人创造这些的创造者  谢谢你😊
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://wx.qlogo.cn/mmopen/vi_32/icSRqsIicy1UmTDwbZFzfe9PtepWjrA8Z6CP4168Z56YicNUAIQPKswrx2qg1CpkkPEMiccE9oSic3iaE9LS1eAjP3PA/0);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            0
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          煞比i
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 22:56
+        </p>
+        <p
+          className="text"
+        >
+          这是我第一次为了一个视频发表评论，说实话，看到他们在那哭着感觉这是不可思议的时候，我很开心，开心他们能够感受到自然的美，他们从书上看到的，远不如自己亲身经历的，自然的美是无法言语的，看到他们哭，我也不禁鼻子一酸，陪他们抽泣，也开心自己能够反思，自己抱怨的事情在某些人看来是幸福的，我们要懂得知足常乐……为我之前嘲笑的，看不起的人表示忏悔，他们在经过我言语上的＊＊时，仍笑对人生，他们是伟大的，再一次表示忏悔——对不起。
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://qzapp.qlogo.cn/qzapp/1104373357/5CC27956DDBEE1C581FABFECB61EECD5/100);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            0
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          萍
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 22:55
+        </p>
+        <p
+          className="text"
+        >
+          感动
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://wx.qlogo.cn/mmopen/vi_32/rIVs0Op1snMLLfzEhan38aqqN5c2V2GLJEVtMMib6cEpuWtGXLyW4ibAV2bWYAic8M7Y7gxsZag5ibGicYPmTH91WwQ/0);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            0
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          But.
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 22:53
+        </p>
+        <p
+          className="text"
+        >
+          看哭了
+莫名感动
+“这里和天堂没什么两样”
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://img.kaiyanapp.com/25659573af3fff8036e66adfcb347fc0.png);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            0
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          Old Time
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 22:53
+        </p>
+        <p
+          className="text"
+        >
+          看的我很难受，不敢想象过去那些色盲症人群竟是一生都未曾见过如此美景
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://wx.qlogo.cn/mmopen/eXqJwZmxRQvGjjF4MUsTaNrj67LSHvOGbCicO5n2gLwnGxiccaGfeTibbPtibf6JRurE6sYJfVroWURXbWRaQ4l0KFkXRicaibsBMC/0);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            0
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          闭眼看世界
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 22:29
+        </p>
+        <p
+          className="text"
+        >
+          这样的眼镜是有的，他们眼睛的光谱曲线和正常人有些不同，只要原色没有完全重叠，都可以通过特定波长增强来增加原色差异，感受到丰富色彩
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://qzapp.qlogo.cn/qzapp/1104373357/E47B7C57263223A8CB5566609AFABD37/100);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            0
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          志明与梓晴
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 21:18
+        </p>
+        <p
+          className="text"
+        >
+          可以做成眼镜么？
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://img.kaiyanapp.com/e4c34fd79cb85548d0774fa5a0a55741.jpeg?imageMogr2/quality/60/format/jpg);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            0
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          　　　luckyhp0618
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 20:09
+        </p>
+        <p
+          className="text"
+        >
+          希望未来做成眼镜
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://wx.qlogo.cn/mmopen/vi_32/jkGxCBsM61BemJpUk5NpTEqjmicAnrJu4XtGoicX5T73aXticySYwRtWxvR3RRFKtrXZ1JkRha8s98M2sY4XkUP4A/0);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            1
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          爸比哇哇
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 18:32
+        </p>
+        <p
+          className="text"
+        >
+          当你看到自己知道却无法看到的东西，内心的满足，这个应该给精选
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://qzapp.qlogo.cn/qzapp/1104373357/444DD53D3F443404A138E1A687D3F17B/100);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            1
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          清净的点心师
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 14:35
+        </p>
+        <p
+          className="text"
+        >
+          我敢说  这绝对是一辈子的体验
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://qzapp.qlogo.cn/qzapp/111111/942FEA70050EEAFBD4DCE2C1FC775E56/100);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+    <div
+      className="reply"
+    >
+      <div
+        className="like"
+      >
+        <div
+          className="like-count"
+        >
+          <div>
+            0
+          </div>
+          <div
+            className="like-count-icon"
+          />
+        </div>
+      </div>
+      <div
+        className="avatar"
+      />
+      <div
+        className="entity"
+      >
+        <p
+          className="username"
+        >
+          材韩
+        </p>
+        <p
+          className="time"
+        >
+          2017-12-11 14:15
+        </p>
+        <p
+          className="text"
+        >
+          早就有了
+        </p>
+      </div>
+      <style
+        jsx={true}
+      >
+        
+        .reply {
+          font-size: 12px;
+          padding-bottom: 15px;
+          position: relative;
+          .like {
+            position: absolute;
+            text-align: right;
+            top: 0;
+            right: 16px;
+          }
+          .like-count &gt; div {
+            display: inline-block;
+          }
+          .like-count-icon {
+            background-image: url(
+              //static.kaiyanapp.com/eyepetizer-web/assets/images/detail/icon_like_grey@3x.d2a2a2a8.png);
+            background-position: 50%;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+            margin-left:5px;
+          }
+          .like-count-hot {
+            font-family: Lobster,cursive;
+          }
+          .avatar {
+            background-position: 50%;
+            background-size: cover;
+            border-radius: 50%;
+            float: left;
+            height: 36px;
+            margin: 0 13px;
+            width: 36px;
+            background-image:url(http://img.kaiyanapp.com/98bae6393511c225d82869a3fdd215f8.png);
+          }
+          .entity {
+            margin-left: 62px;
+            p {
+              line-height: 1.5;
+              margin: 0;
+            }
+            .username {
+              margin: 0;
+              margin-bottom: 4px;
+            }
+            .time {
+              margin-bottom: 4px;
+              opacity: 0.6;
+            }
+            .text {
+              margin-bottom: 15px;
+              padding-right: 35px;
+            }
+          }
+        }
+      
+      </style>
+    </div>
+  </div>
+  <div
+    className="downloader"
+  >
+    <button>
+      下载开眼客户端，查看更多精彩评论！
+    </button>
+  </div>
+  <style
+    jsx={true}
+  >
+    
+        .reply-list {
+          background: rgba(0, 0, 0, 0.4);
+          .header {
+            margin: 16px 0 10px;
+            text-align: center;
+          }
+          .downloader {
+            padding: 0 16px;
+            button {
+              background: hsla(0, 0%, 100%, 0.3);
+              border-radius: 2px;
+              border: none;
+              line-height: 32px;
+              margin-bottom: 16px;
+              padding: 0;
+              width: 100%;
+              color: inherit;
+            }
+          }
+        }
+      
+  </style>
+</div>
+`;

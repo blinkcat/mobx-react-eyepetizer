@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component TagList renders correctly 1`] = `
+<div
+  className="tag-list-container"
+>
+  <div
+    className="divider"
+  >
+    <style
+      jsx={true}
+    >
+      
+        .divider {
+          background: #fff;
+          height: 1px;
+          @media (-webkit-min-device-pixel-ratio: 2) {
+            transform: scaleY(0.5);
+          }
+          &.short {
+            width: 40px;
+          }
+        }
+      
+    </style>
+  </div>
+  <div
+    className="header"
+  >
+    热门标签
+  </div>
+  <div
+    className="tag-list"
+  >
+    <span
+      className="tag"
+    >
+      a
+      <style
+        jsx={true}
+      >
+        
+        .tag {
+          background: hsla(0, 0%, 100%, 0.3);
+          border-radius: 2px;
+          display: inline-block;
+          font-size: 12px;
+          letter-spacing: 3px;
+          line-height: 22px;
+          margin: 4px;
+          padding: 0 6px 0 9px;
+        }
+      
+      </style>
+    </span>
+    <span
+      className="tag"
+    >
+      b
+      <style
+        jsx={true}
+      >
+        
+        .tag {
+          background: hsla(0, 0%, 100%, 0.3);
+          border-radius: 2px;
+          display: inline-block;
+          font-size: 12px;
+          letter-spacing: 3px;
+          line-height: 22px;
+          margin: 4px;
+          padding: 0 6px 0 9px;
+        }
+      
+      </style>
+    </span>
+    <span
+      className="tag"
+    >
+      c
+      <style
+        jsx={true}
+      >
+        
+        .tag {
+          background: hsla(0, 0%, 100%, 0.3);
+          border-radius: 2px;
+          display: inline-block;
+          font-size: 12px;
+          letter-spacing: 3px;
+          line-height: 22px;
+          margin: 4px;
+          padding: 0 6px 0 9px;
+        }
+      
+      </style>
+    </span>
+  </div>
+  <style
+    jsx={true}
+  >
+    
+        .tag-list-container {
+          background: rgba(0, 0, 0, 0.4);
+        }
+        .header {
+          margin: 16px 0;
+          text-align: center;
+        }
+        .tag-list {
+          padding: 0 37px 16px;
+          text-align: center;
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Component TagList renders correctly with empty tagList 1`] = `
+<div
+  className="tag-list-container"
+>
+  <div
+    className="divider"
+  >
+    <style
+      jsx={true}
+    >
+      
+        .divider {
+          background: #fff;
+          height: 1px;
+          @media (-webkit-min-device-pixel-ratio: 2) {
+            transform: scaleY(0.5);
+          }
+          &.short {
+            width: 40px;
+          }
+        }
+      
+    </style>
+  </div>
+  <div
+    className="header"
+  >
+    热门标签
+  </div>
+  <div
+    className="tag-list"
+  />
+  <style
+    jsx={true}
+  >
+    
+        .tag-list-container {
+          background: rgba(0, 0, 0, 0.4);
+        }
+        .header {
+          margin: 16px 0;
+          text-align: center;
+        }
+        .tag-list {
+          padding: 0 37px 16px;
+          text-align: center;
+        }
+      
+  </style>
+</div>
+`;

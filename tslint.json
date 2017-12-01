@@ -11,7 +11,7 @@
     "max-line-length": [true, 120],
     "object-literal-sort-keys": false,
     "arrow-parens": [true, "ban-single-arg-parens"],
-    "member-ordering": false
+    "variable-name": [true, "allow-leading-underscore", "allow-pascal-case"]
   },
   "rulesDirectory": []
 }

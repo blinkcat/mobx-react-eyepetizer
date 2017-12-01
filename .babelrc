@@ -1,13 +1,13 @@
 {
-	"presets": [["env", { "modules": false }]],
-
-	"env": {
-		"test": {
-			"plugins": [
-				"transform-es2015-modules-commonjs",
-				"transform-decorators-legacy",
-				"transform-class-properties"
-			]
-		}
-	}
+  "presets": [
+    [
+      "next/babel",
+      {
+        "styled-jsx": {
+          "plugins": ["styled-jsx-plugin-sass"]
+        }
+      }
+    ]
+  ],
+  "plugins": ["syntax-dynamic-import"]
 }

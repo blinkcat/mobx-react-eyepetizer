@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Divider renders correctly 1`] = `
+<div
+  className="divider"
+>
+  <style
+    jsx={true}
+  >
+    
+        .divider {
+          background: #fff;
+          height: 1px;
+          @media (-webkit-min-device-pixel-ratio: 2) {
+            transform: scaleY(0.5);
+          }
+          &.short {
+            width: 40px;
+          }
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Component Divider renders with short prop correctly 1`] = `
+<div
+  className="divider short"
+>
+  <style
+    jsx={true}
+  >
+    
+        .divider {
+          background: #fff;
+          height: 1px;
+          @media (-webkit-min-device-pixel-ratio: 2) {
+            transform: scaleY(0.5);
+          }
+          &.short {
+            width: 40px;
+          }
+        }
+      
+  </style>
+</div>
+`;
