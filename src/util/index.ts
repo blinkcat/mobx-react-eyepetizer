@@ -12,7 +12,7 @@ export function second2minute(duration = 0): string {
 
 export function dataFormat(timestamp: number): string {
   const d = new Date(timestamp);
-  return `${d.getFullYear()}-${_padstart(d.getMonth() + 1)}-${_padstart(d.getDate())} ${_padstart(
-    d.getHours()
-  )}:${_padstart(d.getMinutes())}`;
+  return `${d.getUTCFullYear()}-${_padstart(d.getUTCMonth() + 1)}-${_padstart(
+    d.getUTCDate()
+  )} ${_padstart(d.getUTCHours() + 8)}:${_padstart(d.getUTCMinutes())}`;
 }
