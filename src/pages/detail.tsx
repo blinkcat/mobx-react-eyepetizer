@@ -6,6 +6,7 @@ import Divider from '../components/divider';
 import { VideoRelatedListContainer } from '../components/videoList';
 import ReplyListContainer from '../components/replyList';
 import TagList from '../components/tag';
+import qs from 'qs';
 
 interface DetailState {
   loadVideoSuccess: boolean;
@@ -15,23 +16,28 @@ interface DetailState {
 }
 
 export default class extends React.Component<any, DetailState> {
+  private vid: number;
   constructor(props) {
     super(props);
     this.state = { loadVideoSuccess: false, tagList: [], bg: '', title: '' };
   }
 
   public render() {
-    const { vid } = this.props.url.query;
+    // https://github.com/zeit/next.js/issues/2910   really uncomfortable!!!
+    this.vid = this.props.url.query.vid;
+    if (!this.vid && typeof window === 'object') {
+      this.vid = qs.parse(window.location.search.slice(1)).vid;
+    }
     return (
       <Layout title={this.state.title}>
         <div className="container">
           {this.state.loadVideoSuccess === false && <Loading />}
-          <PlayerContainer vid={vid} onDataLoaded={this.setLoadVideoData} />
+          <PlayerContainer vid={this.vid} onDataLoaded={this.setLoadVideoData} />
           <Divider />
           <DownloadArea />
           <Divider />
-          <VideoRelatedListContainer vid={vid} />
-          <ReplyListContainer vid={vid} />
+          <VideoRelatedListContainer vid={this.vid} />
+          <ReplyListContainer vid={this.vid} />
           <TagList tagList={this.state.tagList} />
           <Divider />
           <Footer />

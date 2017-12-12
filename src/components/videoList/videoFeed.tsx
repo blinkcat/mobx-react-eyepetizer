@@ -13,7 +13,11 @@ export default function VideoFeed(props: VideoFeedProps) {
     <div className="video-list">
       <div className="date">{date}</div>
       {videoList.map(video => (
-        <Link href={{ pathname: '/detail', query: { vid: video.vid } }} key={video.vid}>
+        <Link
+          href={{ pathname: '/detail', query: { vid: video.vid } }}
+          as={{ pathname: `${process.env.DEPLOY_PREFIX}/detail`, query: { vid: video.vid } }}
+          key={video.vid}
+        >
           <VideoCard {...video} />
         </Link>
       ))}

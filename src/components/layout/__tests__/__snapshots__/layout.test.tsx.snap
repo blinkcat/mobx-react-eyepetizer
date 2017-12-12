@@ -20,8 +20,7 @@ exports[`Component Layout renders correctly 1`] = `
       }
       body {
         margin: 0;
-        font-family: Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Helvetica Neue, Helvetica,
-          Arial, sans-serif;
+        font-family: Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 13px;
         line-height: 1.5;
       }
@@ -50,8 +49,7 @@ exports[`Component Layout renders title correctly 1`] = `
       }
       body {
         margin: 0;
-        font-family: Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Helvetica Neue, Helvetica,
-          Arial, sans-serif;
+        font-family: Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 13px;
         line-height: 1.5;
       }

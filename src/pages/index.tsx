@@ -21,7 +21,7 @@ export default class extends React.Component<any, any> {
   public render() {
     const VideoFeedContainerData = pick(this.props, ['date', 'videoList']);
     return (
-      <Layout title="Home">
+      <Layout title="Eyepetizer | 开眼视频">
         <TopScreen />
         {/* <VideoFeedContainer {...VideoFeedContainerData} /> */}
         <VideoFeed {...VideoFeedContainerData} />

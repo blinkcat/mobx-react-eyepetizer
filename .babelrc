@@ -9,5 +9,5 @@
       }
     ]
   ],
-  "plugins": ["syntax-dynamic-import"]
+  "plugins": [["transform-define", "./config.js"]]
 }

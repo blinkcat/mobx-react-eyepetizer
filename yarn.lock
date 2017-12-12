@@ -56,8 +56,8 @@
   resolved "http://registry.npm.taobao.org/@types/jest/download/@types/jest-21.1.8.tgz#d497213725684f1e5a37900b17a47c9c018f1a97"
 
 "@types/lodash@^4.14.86":
-  version "4.14.88"
-  resolved "http://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.88.tgz#97eaf2dc668f33ed8e511a5b627035f4ea20b0f5"
+  version "4.14.89"
+  resolved "http://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.89.tgz#dd2114403d653a45c3d2f0cae1599949b99a5a3a"
 
 "@types/nock@^8.2.1":
   version "8.2.1"
@@ -66,8 +66,8 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "8.0.57"
-  resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-8.0.57.tgz#e5d8b4dc112763e35cfc51988f4f38da3c486d99"
+  version "8.5.1"
+  resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-8.5.1.tgz#4ec3020bcdfe2abffeef9ba3fbf26fca097514b5"
 
 "@types/react-dom@^16.0.3":
   version "16.0.3"
@@ -83,8 +83,8 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^16.0.25":
-  version "16.0.28"
-  resolved "http://registry.npm.taobao.org/@types/react/download/@types/react-16.0.28.tgz#eb0b31272528da8f20477ec27569c4f767315b33"
+  version "16.0.30"
+  resolved "http://registry.npm.taobao.org/@types/react/download/@types/react-16.0.30.tgz#cca9b180160004df574519c3d7c559fb181d545f"
 
 JSONStream@^1.0.4:
   version "1.3.1"
@@ -622,6 +622,13 @@ babel-plugin-transform-class-properties@6.24.1:
     babel-plugin-syntax-class-properties "^6.8.0"
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
+
+babel-plugin-transform-define@^1.3.0:
+  version "1.3.0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-define/download/babel-plugin-transform-define-1.3.0.tgz#94c5f9459c810c738cc7c50cbd44a31829d6f319"
+  dependencies:
+    lodash "4.17.4"
+    traverse "0.6.6"
 
 babel-plugin-transform-es2015-arrow-functions@^6.22.0:
   version "6.22.0"
@@ -1200,8 +1207,8 @@ camelcase@^4.1.0:
   resolved "http://registry.npm.taobao.org/camelcase/download/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
 caniuse-lite@^1.0.30000780:
-  version "1.0.30000782"
-  resolved "http://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30000782.tgz#5b82b8c385f25348745c471ca51320afb1b7f254"
+  version "1.0.30000783"
+  resolved "http://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30000783.tgz#9b5499fb1b503d2345d12aa6b8612852f4276ffd"
 
 case-sensitive-paths-webpack-plugin@2.1.1:
   version "2.1.1"
@@ -1490,8 +1497,8 @@ core-js@^1.0.0:
   resolved "http://registry.npm.taobao.org/core-js/download/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
 core-js@^2.4.0, core-js@^2.5.0:
-  version "2.5.2"
-  resolved "http://registry.npm.taobao.org/core-js/download/core-js-2.5.2.tgz#bc4648656e7dc9dc80d7d3c7bbc172d96e744e63"
+  version "2.5.3"
+  resolved "http://registry.npm.taobao.org/core-js/download/core-js-2.5.3.tgz#8acc38345824f16d8365b7c9b4259168e8ed603e"
 
 core-util-is@1.0.2, core-util-is@^1.0.1, core-util-is@~1.0.0:
   version "1.0.2"
@@ -1858,8 +1865,8 @@ enhanced-resolve@^3.4.0:
     tapable "^0.2.7"
 
 errno@^0.1.2, errno@^0.1.3, errno@^0.1.4:
-  version "0.1.5"
-  resolved "http://registry.npm.taobao.org/errno/download/errno-0.1.5.tgz#a563781a6052bc2c9ccd89e8cef0eb9506e0c321"
+  version "0.1.6"
+  resolved "http://registry.npm.taobao.org/errno/download/errno-0.1.6.tgz#c386ce8a6283f14fc09563b71560908c9bf53026"
   dependencies:
     prr "~1.0.1"
 
@@ -3607,7 +3614,7 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "~3.0.0"
 
-lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.2.1, lodash@^4.5.1, lodash@^4.6.1, lodash@~4.17.2, lodash@~4.17.4:
+lodash@4.17.4, lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.2.1, lodash@^4.5.1, lodash@^4.6.1, lodash@~4.17.2, lodash@~4.17.4:
   version "4.17.4"
   resolved "http://registry.npm.taobao.org/lodash/download/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -5494,14 +5501,19 @@ tr46@~0.0.3:
   version "0.0.3"
   resolved "http://registry.npm.taobao.org/tr46/download/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
 
+traverse@0.6.6:
+  version "0.6.6"
+  resolved "http://registry.npm.taobao.org/traverse/download/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
+
 travis-deploy-once@^3.0.0:
-  version "3.1.0"
-  resolved "http://registry.npm.taobao.org/travis-deploy-once/download/travis-deploy-once-3.1.0.tgz#9c2393dc0e86c743da90f8e132d605bdd40e248b"
+  version "3.1.2"
+  resolved "http://registry.npm.taobao.org/travis-deploy-once/download/travis-deploy-once-3.1.2.tgz#568fe69d6d7bae9250fd5f58f8af78e30a32396f"
   dependencies:
     chalk "^2.1.0"
     got "^8.0.1"
     p-retry "^1.0.0"
     semver "^5.4.1"
+    url-join "^2.0.2"
 
 tree-kill@^1.1.0:
   version "1.2.0"
@@ -5646,6 +5658,10 @@ unfetch@3.0.0:
 universalify@^0.1.0:
   version "0.1.1"
   resolved "http://registry.npm.taobao.org/universalify/download/universalify-0.1.1.tgz#fa71badd4437af4c148841e3b3b165f9e9e590b7"
+
+url-join@^2.0.2:
+  version "2.0.2"
+  resolved "http://registry.npm.taobao.org/url-join/download/url-join-2.0.2.tgz#c072756967ad24b8b59e5741551caac78f50b8b7"
 
 url-parse-lax@^3.0.0:
   version "3.0.0"

@@ -14,7 +14,11 @@ export function VideoRelatedList({ videoList = [] }: VideoRelatedListProps) {
   return (
     <div className="relate-video-list">
       {videoList.map(video => (
-        <Link href={{ pathname: '/detail', query: { vid: video.vid } }} key={video.vid}>
+        <Link
+          href={{ pathname: '/detail', query: { vid: video.vid } }}
+          as={{ pathname: `${process.env.DEPLOY_PREFIX}/detail`, query: { vid: video.vid } }}
+          key={video.vid}
+        >
           <VideoCard {...video} related />
         </Link>
       ))}

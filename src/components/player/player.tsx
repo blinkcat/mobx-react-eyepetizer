@@ -30,12 +30,7 @@ export default class Player extends React.Component<PlayerProps, PlayerState> {
     }
   }
 
-  public componentDidMount() {
-    this.video.addEventListener('click', this.playOrPause);
-  }
-
   public componentWillUnmount() {
-    this.video.removeEventListener('click', this.playOrPause);
     this.video = null;
   }
 
@@ -124,13 +119,5 @@ export default class Player extends React.Component<PlayerProps, PlayerState> {
 
   private getVideoElement = v => {
     this.video = v;
-  };
-
-  private playOrPause = () => {
-    if (this.video.paused) {
-      this.video.play();
-    } else {
-      this.video.pause();
-    }
   };
 }
