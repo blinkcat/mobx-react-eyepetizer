@@ -4,6 +4,7 @@ node_js:
 cache:
   yarn: true
 script: yarn test && yarn build
+after_success: yarn gh-pages
 deploy:
   provider: pages
   skip_cleanup: true

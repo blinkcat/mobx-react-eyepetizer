@@ -9,7 +9,8 @@
 		"test": "jest ./src",
 		"coverage": "jest ./src --coverage",
 		"prebuild": "rm -rf dist;tsc;cp -f next.config.js ./dist",
-		"build": "next build dist && next export dist"
+		"build": "next build dist && next export dist",
+		"gh-pages": "touch dist/out/.nojekyll"
 	},
 	"dependencies": {
 		"axios": "^0.17.1",
@@ -51,10 +52,7 @@
 		"type": "git",
 		"url": "git+https://github.com/blinkcat/mobx-react-eyepetizer.git"
 	},
-	"keywords": [
-		"mobx",
-		"react"
-	],
+	"keywords": ["mobx", "react"],
 	"author": "blinkcat",
 	"license": "ISC",
 	"bugs": {
