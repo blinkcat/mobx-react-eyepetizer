@@ -1,18 +1,16 @@
 language: node_js
 node_js:
-  - '8'
-  - '6'
+- 'node'
 cache:
   yarn: true
 script: yarn test && yarn build
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  'on':
+  github_token: "$GITHUB_TOKEN"
+  local_dir: "./dist/out"
+  on:
     branch: next
-  local_dir: ./dist/out
 env:
   global:
-    - secure: >-
-        CrtFIIXbRswBRgOZ/Q/nONsky4ccOJVyFSrg79WlfVyaIvk6g4GbxDXhd3u3Uqd7d80rTFk5hf7FOjescRKHmVV/keuSs3l72SbSpltd4MaaUHW1BIctr6ENPwAcf2LTq+AkBycvHvBcNoGVSp/tqvi91mAqYjCwgCxhQvs8Yt7b7yc2w0ijXS4T5pSpzVfP6zAzsYG/eMxL+Liic2xPsJj3MNkg0afvB63liaNEdd7q/Co7ZDgupm9PTBFQAbN168SDyR02z//6Shgxp4mW3OVJnEstWRZ6Nkwu598Toa/P3U0tRDv0nJPsF+YvCH5rhF8P1dyp+eWu0y1G/ZmW8uCmS3WEUWVRI2ZMVnza5sks4bbj96LJyuEySKK4aSd3HXsTFmQ/tPFlUKaYpaP0tVbbvq7BjWAGko0ks27XG8SmXWgxS9BljVwg1m4kGC6idI5PpXiMSRDe+CcQkHfjA+8C6Ea8HWtZIBtqXzsi0JiPqs/m3w34B/Nvwt3AmhZcBmnbFiTqnEGh3EyCN9RiwqtrjaKb+OSui5oLXunPQFHcadQiOuqsc+Bqb8s+GBcl6V0JH6lflQt2yeCpRyAFC8CFtZJ3UwnHvlT7HiLzjQhHZMgmm63qJGIgnp5QwolAT3jWhkS/190CjFGPoWnudmSLg2MJblp8MJaVu8IwHWc=
+  - secure: oHpYPljDQ2IKLFlydJjdm9CPR8yMCxVtqHIwH0U2FyLnTbboa95hNY/6pDEvPfiu9pq3Fg4ZkmbPLfr2/5WbST1no22+1PeGj/avc21HdSR4TMERQ6oJ/7H2Uq+St3Qp1psxXPvcJQ+aXb9rUPkxEeDf2r5Be20ojZUnr/g411jFimHV2k+vqvlNQn4XrYSchszgvA6D9EJ8/cAzA/rH5wp3raynOB08nGE8HxoyTyorX2AyD3mdRQ+H+ax3taSn4R2Ol5xQnN5kPpiRIUphKc4NxXwbfj+/6Ul5q3+aZQqw3OL6q0Fw/ApJVuUVQe88KQ6Y9dtjshHBBs7Ky0Q/wz4ighPkaIqBOOyVHHJlsFQAvt7bGU1d4C0Xz46I41IJ0Uadoyi7r4fc0acgVpPQrc9tT3i7R3cmvSWPSiP06ccXl1BI0AHXOWsZk2lA5FlUr2yvGeVcdQ3N6cT6OEx79AQWBvcbHIPZ9F+pVVHYhfgyN6hbYXdsLX9+AoBZZ7CiDd4XLNoOrKE7e0BalChMBQVURdUjt7FGT4E6lvqdfTRHZpSMgPmjMh6Z2f2XcvyY0xnf04fUdxXyhkUVXs7oRos8fzmqmNsNiMYMgxcwsmVGIWqaE/s7d7OAh8cg+88xfsLO1ZRRyi5D/Jc9pglxyaFKEQ1nkQIbq97vHaScYmY=
