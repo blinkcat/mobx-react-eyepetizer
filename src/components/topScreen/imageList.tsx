@@ -17,6 +17,7 @@ export default class ImageList extends React.Component<any, ImageListState> {
 
   private interval: any;
   private imgCount = this.imgList.length;
+  private imgLoaded = 0;
 
   constructor(props) {
     super(props);
@@ -34,11 +35,18 @@ export default class ImageList extends React.Component<any, ImageListState> {
   }
 
   public render() {
+    this.imgLoaded = Math.max(this.imgLoaded, this.state.curImgIndex);
     return (
       <div className="image-list">
-        {this.imgList.map((image, i) => (
-          <img key={i} src={image} className={i === this.state.curImgIndex ? '' : 'hide'} />
-        ))}
+        {this.imgList.map((image, i) => {
+          if (i < this.imgLoaded + 2) {
+            return (
+              <img key={i} src={image} className={i === this.state.curImgIndex ? '' : 'hide'} />
+            );
+          } else {
+            return <img key={i} className={i === this.state.curImgIndex ? '' : 'hide'} />;
+          }
+        })}
         <style jsx>
           {`
             .image-list {

@@ -27,6 +27,7 @@
 		"qs": "^6.5.1",
 		"react": "^16.2.0",
 		"react-dom": "^16.2.0",
+		"react-lazyload": "^2.3.0",
 		"react-transition-group": "^2.2.1"
 	},
 	"devDependencies": {
@@ -56,7 +57,10 @@
 		"type": "git",
 		"url": "git+https://github.com/blinkcat/mobx-react-eyepetizer.git"
 	},
-	"keywords": ["mobx", "react"],
+	"keywords": [
+		"mobx",
+		"react"
+	],
 	"author": "blinkcat",
 	"license": "ISC",
 	"bugs": {

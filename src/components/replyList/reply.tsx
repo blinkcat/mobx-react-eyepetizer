@@ -1,4 +1,5 @@
 import * as React from 'react';
+import LazyLoad from 'react-lazyload';
 
 export interface ReplyProps {
   id: number;
@@ -20,7 +21,9 @@ export function Reply({ message, hot, avatar, nickname, createTime, likeCount }:
         </div>
         {hot === true && <div className="like-count-hot">- Hot -</div>}
       </div>
-      <div className="avatar" />
+      <LazyLoad height={36}>
+        <div className="avatar" />
+      </LazyLoad>
       <div className="entity">
         <p className="username">{nickname}</p>
         <p className="time">{createTime}</p>

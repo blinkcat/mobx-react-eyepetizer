@@ -1,5 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
+import LazyLoad from 'react-lazyload';
 
 export interface VideoCardProps {
   vid?: number;
@@ -13,7 +14,10 @@ export interface VideoCardProps {
 export default function VideoCard({ title, meta, cover, related, onClick: onVideoCardClick }: VideoCardProps) {
   return (
     <div className={classNames({ 'video-card': !related, 'video-card-related': related })} onClick={onVideoCardClick}>
-      <div className="cover" />
+      {!related && <div className="cover" />}
+      <LazyLoad height={related ? 88 : 245} once>
+        <div className="video-cover" />
+      </LazyLoad>
       {!related && <div className="title">{title}</div>}
       {!related && <div className="meta">{meta}</div>}
       {related && (
@@ -24,13 +28,10 @@ export default function VideoCard({ title, meta, cover, related, onClick: onVide
       )}
       <style jsx>{`
         .video-card {
-          background-position: 50%;
-          background-size: cover;
           color: #fff;
           cursor: pointer;
           height: 450px;
           position: relative;
-          background-image: url(${cover});
           .title,
           .meta {
             position: absolute;
@@ -52,6 +53,14 @@ export default function VideoCard({ title, meta, cover, related, onClick: onVide
             transition: background 0.6s;
             width: 100%;
           }
+          .video-cover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-position: 50%;
+            background-size: cover;
+            background-image: url(${cover});
+          }
           .title {
             font-size: 16px;
             font-weight: 700;
@@ -66,7 +75,7 @@ export default function VideoCard({ title, meta, cover, related, onClick: onVide
         .video-card-related {
           margin-bottom: 20px;
           position: relative;
-          .cover {
+          .video-cover {
             background-position: 50%;
             background-size: cover;
             border: 1px solid hsla(0, 0%, 100%, 0.3);
