@@ -41,7 +41,10 @@ export default class extends React.Component<any, DetailState> {
           <TagList tagList={this.state.tagList} />
           <Divider />
           <Footer />
-          <div className="video-cover-blurred" style={{ backgroundImage: `url(${this.state.bg})` }} />
+          <div
+            className="video-cover-blurred"
+            style={{ backgroundImage: `url(${this.state.bg})` }}
+          />
           <style jsx global>
             {`
               body {
@@ -75,7 +78,12 @@ export default class extends React.Component<any, DetailState> {
   }
 
   private setLoadVideoData = obj => {
-    this.setState({ loadVideoSuccess: true, tagList: obj.tags, bg: obj.coverBlurred, title: obj.title });
+    this.setState({
+      loadVideoSuccess: obj.loadVideoSuccess,
+      tagList: obj.tags,
+      bg: obj.coverBlurred,
+      title: obj.title
+    });
   };
 }
 

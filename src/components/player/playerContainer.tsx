@@ -7,6 +7,7 @@ import { second2minute } from '../../util';
 
 export default withDataContainer(
   (props, onData) => {
+    props.onDataLoaded({ loadVideoSuccess: false });
     db.video
       .detail(props.vid)
       .then(res => {
@@ -25,7 +26,12 @@ export default withDataContainer(
         delete result.category;
         delete result.duration;
         onData(null, result);
-        props.onDataLoaded({ tags: result.tags, coverBlurred: result.coverBlurred, title: result.title });
+        props.onDataLoaded({
+          loadVideoSuccess: true,
+          tags: result.tags,
+          coverBlurred: result.coverBlurred,
+          title: result.title
+        });
       })
       .catch(err => {
         onData(err);
