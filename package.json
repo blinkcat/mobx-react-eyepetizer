@@ -59,7 +59,10 @@
 		"type": "git",
 		"url": "git+https://github.com/blinkcat/mobx-react-eyepetizer.git"
 	},
-	"keywords": ["mobx", "react"],
+	"keywords": [
+		"mobx",
+		"react"
+	],
 	"author": "blinkcat",
 	"license": "ISC",
 	"bugs": {
