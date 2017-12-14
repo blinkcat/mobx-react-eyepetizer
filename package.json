@@ -10,7 +10,8 @@
 		"coverage": "jest ./src --coverage",
 		"prebuild": "rm -rf dist && tsc && cp -f next.config.js ./dist",
 		"build": "next build dist && next export dist",
-		"gh-pages": "touch dist/out/.nojekyll"
+		"gh-pages": "touch dist/out/.nojekyll",
+		"analyze": "cross-env ANALYZE=1 yarn build"
 	},
 	"dependencies": {
 		"axios": "^0.17.1",
@@ -48,16 +49,14 @@
 		"styled-jsx-plugin-sass": "^0.2.2",
 		"ts-jest": "^21.2.3",
 		"tslint": "^5.8.0",
-		"typescript": "^2.6.2"
+		"typescript": "^2.6.2",
+		"webpack-bundle-analyzer": "^2.9.1"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/blinkcat/mobx-react-eyepetizer.git"
 	},
-	"keywords": [
-		"mobx",
-		"react"
-	],
+	"keywords": ["mobx", "react"],
 	"author": "blinkcat",
 	"license": "ISC",
 	"bugs": {
