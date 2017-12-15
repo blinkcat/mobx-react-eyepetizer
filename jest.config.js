@@ -7,13 +7,10 @@ module.exports = {
   },
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
+  setupFiles: ['<rootDir>/__test__/config.ts'],
   globals: {
     'ts-jest': {
-      tsConfigFile: 'ts-jest-tsconfig.json',
-      babelConfig: {
-        plugins: ['syntax-dynamic-import']
-      },
-      useBabelrc: true
+      tsConfigFile: 'ts-jest-tsconfig.json'
     }
   }
 };

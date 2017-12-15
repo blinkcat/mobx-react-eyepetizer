@@ -2,3 +2,4 @@ export { default, reorganizeData as reorganizeVideoFeedData } from './videoFeedC
 export { default as VideoFeed } from './videoFeed';
 export { VideoRelatedList } from './videoRelatedList';
 export { default as VideoRelatedListContainer } from './videoRelatedList';
+export { default as VideoCard } from './videoCard';
