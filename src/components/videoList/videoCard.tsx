@@ -14,10 +14,10 @@ export interface VideoCardProps {
 export default function VideoCard({ title, meta, cover, related, onClick: onVideoCardClick }: VideoCardProps) {
   return (
     <div className={classNames({ 'video-card': !related, 'video-card-related': related })} onClick={onVideoCardClick}>
-      {!related && <div className="cover" />}
       <LazyLoad height={related ? 88 : 245} once>
         <div className="video-cover" />
       </LazyLoad>
+      {!related && <div className="cover" />}
       {!related && <div className="title">{title}</div>}
       {!related && <div className="meta">{meta}</div>}
       {related && (
@@ -52,6 +52,9 @@ export default function VideoCard({ title, meta, cover, related, onClick: onVide
             position: absolute;
             transition: background 0.6s;
             width: 100%;
+            @media screen and (max-width: 1024px) {
+              display: none;
+            }
           }
           .video-cover {
             position: absolute;
